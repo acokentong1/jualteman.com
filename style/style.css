@@ -1,0 +1,353 @@
+:root {
+  --primary-100: #ff6600;
+  --primary-200: #ff983f;
+  --primary-300: #ffffa1;
+  --accent-100: #f5f5f5;
+  --accent-200: #929292;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --bg-100: #1d1f21;
+  --bg-200: #2c2e30;
+  --bg-300: #444648;
+}
+
+/* Bagian Reset */
+
+body,
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 500vh;
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  /* overflow-x: hidden; */
+}
+/* Bagian Header */
+
+header {
+  margin: auto;
+  /*width: 97vw;
+  */
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 3.5rem;
+  padding: 0 1rem;
+  color: var(--text-100);
+  background-color: var(--bg-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+  border-bottom: 3px solid var(--primary-200);
+  z-index: 999;
+}
+
+header p {
+  font-size: x-large;
+  font-style: italic;
+  cursor: pointer;
+}
+
+header p span {
+  color: var(--primary-100);
+  font-weight: bold;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav ul li a {
+  transition: 0.3s;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--accent-100);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  font-size: 1.1rem;
+  color: var(--text-200);
+  border-bottom: 1px solid var(--primary-100);
+}
+
+/* Main */
+
+main {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Home */
+
+.container-home {
+  color: var(--text-200);
+  padding: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bg-200);
+  height: 95vh;
+  border-radius: 0 0 140px 140px;
+  -webkit-border-radius: 0 0 140px 140px;
+  -moz-border-radius: 0 0 140px 140px;
+  -ms-border-radius: 0 0 140px 140px;
+  -o-border-radius: 0 0 140px 140px;
+  border-bottom: 2px solid var(--primary-200);
+}
+
+.text-home {
+  width: 50%;
+}
+
+.text-home h1 {
+  color: var(--primary-200);
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.text-home p {
+  font-size: 1.1rem;
+  text-indent: 1rem;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.logo {
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.logo div {
+  width: 300px;
+  height: 300px;
+  background-color: var(--accent-100);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 4px solid var(--primary-200);
+  box-shadow: 3px 3px 4px var(--accent-200);
+}
+
+.logo img {
+  left: 1px;
+  top: 0px;
+  position: absolute;
+  width: 400px;
+}
+
+/* promosi */
+.container-promosi {
+  margin: 4rem 0;
+}
+
+.container-promosi h1 {
+  margin-left: 0.5rem;
+  width: fit-content;
+  color: var(--accent-100);
+  font-size: 3rem;
+}
+
+.container-promosi h1 span {
+  color: var(--primary-200);
+}
+
+.container-promosi p {
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  text-indent: 1rem;
+}
+
+.kotak-promosi {
+  border: 3px solid var(--primary-300);
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+  margin: 1.4rem auto;
+  background-color: var(--bg-300);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.card-promosi {
+  margin: 1rem;
+  text-align: center;
+  padding: 0.7rem;
+  width: 350px;
+  background-color: var(--bg-100);
+  border-radius: 45px 45px 0 0;
+  -webkit-border-radius: 45px 45px 0 0;
+  -moz-border-radius: 45px 45px 0 0;
+  -ms-border-radius: 45px 45px 0 0;
+  -o-border-radius: 45px 45px 0 0;
+  cursor: pointer;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+.card-promosi:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.border-bawah {
+  border-radius: 0 0 45px 45px;
+  -webkit-border-radius: 0 0 45px 45px;
+  -moz-border-radius: 0 0 45px 45px;
+  -ms-border-radius: 0 0 45px 45px;
+  -o-border-radius: 0 0 45px 45px;
+}
+
+.card-promosi img {
+  width: 250px;
+  border-radius: 25%;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  -o-border-radius: 25%;
+}
+
+.card-promosi h3 {
+  font-size: 1.7rem;
+}
+
+.card-promosi h4 span {
+  color: red;
+  text-decoration: line-through;
+}
+
+.card-promosi p {
+  margin: 0.3rem;
+  text-transform: none;
+}
+
+.card-promosi a {
+  color: var(--accent-100);
+}
+
+/* bagian list  */
+
+.container-list {
+  margin: 3rem 0;
+  padding: 3rem;
+  background-color: var(--bg-200);
+  border-radius: 140px 140px 140px 140px;
+  -webkit-border-radius: 140px 140px 140px 140px;
+  -moz-border-radius: 140px 140px 140px 140px;
+  -ms-border-radius: 140px 140px 140px 140px;
+  -o-border-radius: 140px 140px 140px 140px;
+  border: 3px solid var(--primary-200);
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-depan {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 250px;
+  background-color: var(--bg-100);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  align-items: center;
+}
+
+.list-depan h1 {
+  color: var(--primary-100);
+}
+
+.list-depan a {
+  margin-top: 0.4rem;
+  align-self: flex-end;
+  color: var(--accent-100);
+}
+
+.list-depan img {
+  width: 250px;
+}
+
+/* responsive */
+
+/* untuk table  */
+@media screen and (min-width: 767px) and (max-width: 1023) {
+  header nav {
+    width: 80%;
+  }
+
+  header nav ul {
+    width: 100%;
+  }
+
+  .text-home {
+    margin-left: 2rem;
+  }
+}
+
+/* untuk android  */
+@media screen and (max-width: 767px) {
+  header p {
+    display: none;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  .text-home {
+    width: 100%;
+    margin: 0.2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .kotak-promosi {
+    gap: 0;
+  }
+}
