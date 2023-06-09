@@ -7,16 +7,20 @@
     <link rel="icon" href="asset/img/logo/jt.png" />
     <title>JualTeman.com</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
   </head>
   <body>
     <header>
       <p>Jual<span>Teman</span>.com</p>
       <nav>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PROMO</a></li>
-          <li><a href="#">PRODUK</a></li>
-          <li><a href="#">PEMESANAN</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#promo">PROMO</a></li>
+          <li><a href="#produk">PRODUK</a></li>
+          <li><a href="#pesan">PEMESANAN</a></li>
         </ul>
       </nav>
     </header>
@@ -24,7 +28,7 @@
     <main>
       <!-- Bagian Home -->
 
-      <section class="container-home">
+      <section class="container-home" id="home">
         <article class="text-home">
           <h1>JualTeman.com</h1>
           <p>
@@ -46,7 +50,7 @@
       </section>
 
       <!-- bagian promosi -->
-      <section class="container-promosi">
+      <section class="container-promosi" id="promo">
         <h1>Promo <span>Gila-Gilaan</span></h1>
         <p>
           Bingung mau cari teman hits kekinian yang super higienis? Bebas bahan
@@ -61,7 +65,7 @@
               Seorang pria setia yang sering di kecewakan oleh wanita,
               berperawakan gagah dan berani. Namun Kurang tinggi
             </p>
-            <a href="#">More info >> </a>
+            <a href="asset/profile/ayyub.html">More info >> </a>
           </div>
 
           <div class="card-promosi border-bawah">
@@ -73,7 +77,7 @@
               berpenampilan menarik dengan ciri khasnya yang tinggi dan berkulit
               putih
             </p>
-            <a href="#">More info >> </a>
+            <a href="asset/profile/dandi.html">More info >> </a>
           </div>
 
           <div class="card-promosi">
@@ -85,15 +89,15 @@
               daerah yang sangat berbahaya dan pernah jadi preman yang sangat
               ditakuti
             </p>
-            <a href="#">More info >> </a>
+            <a href="asset/profile/rizki.html">More info >> </a>
           </div>
         </div>
       </section>
 
       <!-- bagian list -->
 
-      <section class="container-list">
-        <h1>List Produk</h1>
+      <section class="container-list" id="produk">
+        <h1><span>List</span> Produk</h1>
         <article class="card-list">
           <div class="list-depan">
             <img src="asset/img/profile/sahrul.JPG" alt="foto sahrul" />
@@ -103,7 +107,7 @@
               Pria dengan kepintaran di atas rata-rata, pandai bergaul dan
               memiliki jiwa sosial yang tinggi. Serorang Wibu sejati.
             </p>
-            <a href="#">More Info>></a>
+            <a href="asset/profile/sahrul.html">More Info>></a>
           </div>
 
           <div class="list-depan">
@@ -114,7 +118,7 @@
               Seorang pria setia yang sering di kecewakan oleh wanita,
               berperawakan gagah dan berani. Namun Kurang tinggi.
             </p>
-            <a href="#">More Info>></a>
+            <a href="asset/profile/ayyub.html">More Info>></a>
           </div>
 
           <div class="list-depan">
@@ -125,7 +129,7 @@
               Seorang pria setia yang sering di kecewakan oleh wanita,
               berperawakan gagah dan berani. Namun Kurang tinggi.
             </p>
-            <a href="#">More Info>></a>
+            <a href="asset/profile/dandi.html">More Info>></a>
           </div>
 
           <div class="list-depan">
@@ -136,7 +140,7 @@
               Seorang pria muda pekrja keras dan terbisa memanjat daerah tinggi
               dia pernah tinggal di gunung, kini dia sukses di dunia.
             </p>
-            <a href="#">More Info>></a>
+            <a href="asset/profile/hamzah.html">More Info>></a>
           </div>
 
           <div class="list-depan">
@@ -147,7 +151,7 @@
               Anak muda yang sangat lihai dan ahli dalam membuat batu bata dalam
               sehari dia dapat menhasilkan ribuan batu bata.
             </p>
-            <a href="#">More Info>></a>
+            <a href="asset/profile/mudi.html">More Info>></a>
           </div>
 
           <div class="list-depan">
@@ -159,10 +163,128 @@
               daerah yang sangat berbahaya dan pernah jadi preman yang sangat
               ditakuti.
             </p>
-            <a href="#">More Info>></a>
+            <a href="asset/profile/rizki.html">More Info>></a>
           </div>
         </article>
       </section>
+
+      <!-- bagian pemesana  -->
+
+      <section class="container-pesan" id="pesan">
+        <article class="pesan">
+          <h1>Pemesanan <span>Produk</span></h1>
+          <label>
+            <p>Email</p>
+            <input type="email" placeholder="Masukan Email Anda..." />
+          </label>
+
+          <label>
+            <p>Nama</p>
+            <input type="text" placeholder="Masukan nama anda..." />
+          </label>
+
+          <label>
+            <p>Pesanan</p>
+            <input
+              type="text"
+              placeholder="Masukan nama yang akan anda pesan..."
+            />
+          </label>
+          <button>Kirim</button>
+        </article>
+        <aside>
+          <h1>Bio<span>data</span></h1>
+          <figure>
+            <img src="asset/img/biodata/profile 1.jpeg" alt="" />
+            <figcaption>A MUH YUSUF YUSRI AL</figcaption>
+            <p>( Web Developer )</p>
+          </figure>
+          <div class="motivasi">
+            <h2>Motivasi Hidup</h2>
+            <hr />
+            <ul>
+              <li>
+                Tidak ada istilah gagal dalam hidup, yang ada hanya sukses dan
+                belum berhasil. Jangan menyerah!
+              </li>
+              <li>Terus belajar dan melakukan yang terbaik</li>
+            </ul>
+          </div>
+
+          <div class="prinsip">
+            <h2>Prinsip Hidup</h2>
+            <hr />
+            <ul>
+              <li>
+                Apa adanya, adanya apa. yang maksudnya itu untuk memulai sesuatu
+                gunakan apa yang ada saja dulu.
+              </li>
+              <li>
+                Satu sikap konsisten akan menjadikanmu disiplin dan fokus pada
+                tujuan.
+              </li>
+            </ul>
+          </div>
+
+          <div class="sosial-media">
+            <h2>Sosial Media</h2>
+            <hr />
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/acokentong/"
+                  ><i class="fi fi-brands-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/acokentong11/"
+                  ><i class="fi fi-brands-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.github.com/acokentong1/"
+                  ><i class="fi fi-brands-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
     </main>
+
+    <footer>
+      <div class="bawah-kiri">
+        <h2>Sosial Media</h2>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fi fi-brands-facebook"></i> facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fi fi-brands-instagram"></i> instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.twitter.com/"
+              ><i class="fi fi-brands-twitter"></i> Twitter</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="bawah-tengah">
+        <p>Copyright &copy; JualTeman.com 2023</p>
+      </div>
+
+      <div class="bawah-kanan">
+        <h2>Teknologi</h2>
+        <ul>
+          <li><i class="fi fi-brands-html5"></i> HTML</li>
+          <li><i class="fi fi-brands-css3"></i> CSS</li>
+          <li><i class="fi fi-brands-visual-basic"></i> VS Code</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
