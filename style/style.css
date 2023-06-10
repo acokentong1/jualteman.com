@@ -87,7 +87,7 @@ header nav ul li a:hover {
 /* Main */
 
 main {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Home */
@@ -520,10 +520,12 @@ a,
   list-style: none;
   text-decoration: none;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
-.bawah-tengah p {
-  font-size: 3rem;
+.bawah-tengah {
+  text-align: center;
+  font-size: 2.5rem;
   color: var(--primary-100);
 }
 
@@ -534,7 +536,7 @@ a,
 /* responsive */
 
 /* untuk table  */
-@media screen and (min-width: 767px) and (max-width: 1023) {
+@media (min-width: 768px) and (max-width: 1023px) {
   header nav {
     width: 80%;
   }
@@ -543,8 +545,9 @@ a,
     width: 100%;
   }
 
-  .text-home {
-    margin-left: 2rem;
+  .container-home {
+    padding: none;
+    justify-content: space-between;
   }
 
   .container-pesan {
@@ -561,14 +564,24 @@ a,
     margin: 1rem auto;
   }
 
-  .bawah-tengah p {
+  .bawah-kiri li,
+  a,
+  .bawah-kanan li {
+    font-size: 1rem;
+  }
+
+  .bawah-kanan,
+  .bawah-kiri {
+    margin: 1rem;
+  }
+
+  .bawah-tengah {
     font-size: 2rem;
-    color: white;
   }
 }
 
 /* untuk android  */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   header p {
     display: none;
   }
@@ -578,8 +591,13 @@ a,
   }
 
   .text-home {
-    width: 100%;
-    margin: 0.2rem;
+    width: max-content;
+  }
+
+  .text-home h1 {
+    margin-left: -25px;
+    text-align: left;
+    font-size: 2.5rem;
   }
 
   .logo {
@@ -588,6 +606,14 @@ a,
 
   .kotak-promosi {
     gap: 0;
+  }
+
+  .card-promosi {
+    margin: 1.5rem 0;
+  }
+
+  .container-pesan {
+    padding: 7%;
   }
 
   .pesan {
@@ -610,7 +636,8 @@ a,
     margin: 1rem 0;
   }
 
-  .bawah-tengah p {
+  .bawah-tengah {
     font-size: 1.7rem;
+    text-align: center;
   }
 }

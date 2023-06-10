@@ -176,6 +176,7 @@ a,
   list-style: none;
   text-decoration: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .bawah-tengah p {
@@ -190,14 +191,36 @@ a,
 /* responsive */
 
 /* untuk table  */
-@media screen and (max-width: 1023) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .foto ul {
     width: 100%;
+  }
+
+  .bawah-kiri li,
+  a,
+  .bawah-kanan li {
+    font-size: 1rem;
+  }
+
+  .bawah-kanan,
+  .bawah-kiri {
+    margin: 1rem;
+  }
+
+  .bawah-tengah p {
+    text-align: center;
+    font-size: 2rem;
   }
 }
 
 /* untuk android  */
 @media screen and (max-width: 767px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
   header a {
     font-size: 1rem;
   }
