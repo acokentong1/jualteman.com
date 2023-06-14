@@ -308,6 +308,16 @@ main {
   margin-top: 0.4rem;
   align-self: flex-end;
   color: var(--accent-100);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.list-depan a:hover {
+  color: var(--primary-100);
+  border-bottom: 1px solid var(--accent-100);
 }
 
 .list-depan img {
